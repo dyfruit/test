@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GF기획</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+  <link rel="icon" href="https://gfad01.cafe24.com/img/renewal/favicon.png" type="image/x-icon">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <div class="page_wrap">
+    <div class="header">
+      <a class="header_logo" href="#">
+        <h1 class="blind">GF Planning</h1>
+      </a>
+      <div class="mobile_btn"><!--btn_menu-->
+        <input type="checkbox" id="hamburger">
+        <label for="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="sidebar">
+          <ul class="nav_mobile">
+            <li class="btn-padding"><a href="#">MAIN</a></li>
+            <li><a href="#">WORK</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#">WE ARE</a></li>
+            <li><a href="#">CONTACT US</a></li>
+            <div class="contact">
+              <span class="mail">M teamgfpl@teamgfpl.com</span>
+              <span class="tell">T 053 719 3637</span>
+              <span class="company">C 070 8656 8465</span>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="main_content">
+      <div class="main_text_bg" data-aos="fade-up" data-aos-duration="3000"></div>
+      <div class="main_text_box">
+        <h1 class="text1">세상에</h1>
+        <h1 class="text2">없던</h1>
+        <h1 class="text3">특별함</h1>
+
+      </div>
+      <section id="button_scroll" class="demo">
+        <a href="" data-aos="fade-up" data-aos-duration="2000"><span></span>Scroll down</a>
+      </section>
+      <div class="work_bg"></div>
+      <h1 class="work_text1" data-aos="fade-up" data-aos-duration="3000">무엇이든 새롭게 해석하는 일은 <br>저희가 제일 좋아하고
+        <br> <span class="bold_text">잘하는 일</span>입니다
+      </h1>
+      <h1 class="work_text2" data-aos="fade-up" data-aos-duration="3000">다양한 분야의 전문가들이 모여 <br>브랜드의 상상을 현실로 만들고 <br>세상에
+        없던 특별함을 만드는<br>
+        <span class="bold_text">GF기획</span>입니다
+      </h1>
+    </div>
+    <div class="product">
+
+      <script>//스크롤다운
+        $(function () {
+          $('a[href*=#]').on('click', function (e) {
+            e.preventDefault();
+            $('#fixed').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500, 'linear');
+          });
+        });
+      </script>
+    </div>
+    <script>//aos
+      AOS.init();
+    </script>
+</body>
+
+</html>
